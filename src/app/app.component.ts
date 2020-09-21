@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'festkick';
-}
+  get _cityName():string{
+    return this._cityName
+  }
+  set _cityName(value:string){
+    this._cityName = value;
+   }
+  }
+
+ 
