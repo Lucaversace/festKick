@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormHomeComponent implements OnInit {
 
+  cityName:string;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  get _cityName():string{
+    return this._cityName;
+  }
+  set _cityName(value:string){
+    this._cityName = value;
+   }
 }
+
