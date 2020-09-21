@@ -7,7 +7,10 @@ import { HomeComponent } from './home/home.component';
 const routes: Routes = [
   {path: 'Home', component: HomeComponent},
   {path: 'EventsList', component: EventsListComponent},
-  {path: ':name', component: DescripEventComponent}
+  {path: 'Event/:name', component: DescripEventComponent},
+  {path: '**', redirectTo:"Home"}
+
+
 ];
 
 @NgModule({

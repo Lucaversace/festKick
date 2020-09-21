@@ -13,6 +13,7 @@ import { FormHomeComponent } from './form-home/form-home.component';
 import { ElemEventComponent } from './elem-event/elem-event.component';
 import { MapComponent } from './map/map.component';
 import { DescripComponent } from './descrip/descrip.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -23,13 +24,13 @@ import { DescripComponent } from './descrip/descrip.component';
     FormHomeComponent,
     ElemEventComponent,
     MapComponent,
-    DescripComponent
+    DescripComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgModel,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule
