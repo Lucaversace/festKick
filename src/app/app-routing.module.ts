@@ -9,7 +9,7 @@ const routes: Routes = [
   {path: 'Events/:location', component: EventsListComponent},
   {path: 'Event/:name', component: DescripEventComponent},
   {path: '**', redirectTo:"Home"}
-
+ 
 ];
 
 @NgModule({

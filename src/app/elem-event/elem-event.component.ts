@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { SongKickService } from '../song-kick.service';
 
-@Component({
+@Component({ 
   selector: 'app-elem-event',
   templateUrl: './elem-event.component.html',
   styleUrls: ['./elem-event.component.css']
