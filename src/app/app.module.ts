@@ -14,6 +14,7 @@ import { ElemEventComponent } from './elem-event/elem-event.component';
 import { MapComponent } from './map/map.component';
 import { DescripComponent } from './descrip/descrip.component';
 import { MenuComponent } from './menu/menu.component';
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { MenuComponent } from './menu/menu.component';
     MenuComponent
   ],
   imports: [
+    LeafletModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,

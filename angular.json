@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "festkick"
+  "defaultProject": "festkick",
+  "cli": {
+    "analytics": "1eade1f2-1345-4ae6-9a42-a679d530da23"
+  }
 }
