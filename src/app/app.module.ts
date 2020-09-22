@@ -14,7 +14,7 @@ import { ElemEventComponent } from './elem-event/elem-event.component';
 import { MapComponent } from './map/map.component';
 import { DescripComponent } from './descrip/descrip.component';
 import { MenuComponent } from './menu/menu.component';
-import { CommonModule } from '@angular/common';
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 
 @NgModule({
   declarations: [
@@ -29,8 +29,8 @@ import { CommonModule } from '@angular/common';
     MenuComponent,
   ],
   imports: [
+    LeafletModule,
     BrowserModule,
-    CommonModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,

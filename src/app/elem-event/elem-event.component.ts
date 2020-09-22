@@ -9,7 +9,7 @@ import { SongKickService } from '../song-kick.service';
 export class ElemEventComponent implements OnInit {
 
   @Input()
-  event:Object[];
+  event:Object;
 
   constructor(private songKickServ: SongKickService) { }
 
@@ -18,3 +18,4 @@ export class ElemEventComponent implements OnInit {
   }
 
 }
+ 
