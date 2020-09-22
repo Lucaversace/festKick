@@ -1,4 +1,4 @@
-import { Component, OnInit, ɵConsole } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { SongKickService } from '../song-kick.service';
 
@@ -9,7 +9,7 @@ import { SongKickService } from '../song-kick.service';
 })
 export class EventsListComponent implements OnInit {
 
-  events: any;
+  events: Object[];
   objId: any;
 
   constructor(
@@ -29,6 +29,7 @@ export class EventsListComponent implements OnInit {
           this.songKickServ.getEvents(lat,lon).subscribe((data) => {
             this.events = data;
             console.log(data);
+            this.events = data.resultsPage.results.event;
           });
         });
     });

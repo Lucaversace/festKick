@@ -1,4 +1,4 @@
 <div>
-    {{ events.resultsPage.results.event[0].displayName  }}
-    <app-elem-event></app-elem-event>
+    <app-elem-event [event]="event" *ngFor="let event of events"></app-elem-event>
+    {{event }}
 </div>
