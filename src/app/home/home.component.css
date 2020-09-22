@@ -1,10 +1,10 @@
 
-        .logo{
+/*         .logo{
         position : fixed;
          left : 10px; 
          top : 10px; 
-        }
-        body,html{
+        } */
+        html{
         height: 100%;
         width: 100%;
         margin: 0;
@@ -12,7 +12,11 @@
         /* background: grey !important; */
         }
 
-        body{
+        .omoplate{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
         background-image: url("../../assets/Fond1.png");
         background-size: cover;
         background-repeat: no-repeat;
@@ -20,9 +24,10 @@
         mask-image: 50%;  }
 
         .container{ 
-            margin-top: 15%;
+            padding-top: 12%;
             filter : brightness(100%);
         }
+        
         
         .form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
             border: none;
