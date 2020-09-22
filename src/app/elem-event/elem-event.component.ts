@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SongKickService } from '../song-kick.service';
 
 @Component({
   selector: 'app-elem-event',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ElemEventComponent implements OnInit {
 
-  constructor() { }
+  event:any;
+
+  constructor(private songKickServ: SongKickService) { }
 
   ngOnInit(): void {
+
   }
 
 }

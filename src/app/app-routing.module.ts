@@ -6,10 +6,9 @@ import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {path: 'Home', component: HomeComponent},
-  {path: 'EventsList', component: EventsListComponent},
+  {path: 'Events/:location', component: EventsListComponent},
   {path: 'Event/:name', component: DescripEventComponent},
   {path: '**', redirectTo:"Home"}
-
 
 ];
 
