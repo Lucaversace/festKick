@@ -19,9 +19,7 @@ export class EventsListComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe((params) => {
-      this.songKickServ
-        .getLatLonCity(params.location)
-        .subscribe((locationDetails) => {
+      this.songKickServ.getLatLonCity(params.location).subscribe((locationDetails) => {
 
           const lat = locationDetails.resultsPage.results.location[0].city.lat;
           const lon = locationDetails.resultsPage.results.location[0].city.lng;
