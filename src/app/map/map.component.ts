@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, Input, ViewChild } from '@angular/core';
 import * as L from 'leaflet';
 
 @Component({
@@ -7,6 +7,10 @@ import * as L from 'leaflet';
   styleUrls: ['./map.component.css']
 })
 export class MapComponent implements AfterViewInit {
+
+  @Input()
+  lat:any;
+  lon:any;
 
   @ViewChild('map') private map;
 
@@ -20,15 +24,18 @@ export class MapComponent implements AfterViewInit {
     shadowSize:  [41, 41]
   }); 
   
-  constructor() { }
+  constructor() { 
+  }
 
   ngAfterViewInit(): void { 
+    console.log(this.lat, this.lon);
     this.createMap();
   }
-  createMap() {
+
+  private createMap() {
     const Halltonie = {
-      lat: 45.731904,
-      lng: 4.825906,
+      lat: this.lat,
+      lng: this.lon,
     };
 
     const zoomLevel = 12;
@@ -50,12 +57,12 @@ export class MapComponent implements AfterViewInit {
     const popupOptions = {
       coords: Halltonie,
       text: Halldescription,
-      open: false
+      open: true
     };
     this.addMarker(popupOptions);
   }
 
-  addMarker({coords, text, open}) {
+  private addMarker({coords, text, open}) {
     const marker = L.marker([coords.lat, coords.lng], { icon: this.smallicon });
     if (open) {
       marker.addTo(this.map).bindPopup(text).openPopup();

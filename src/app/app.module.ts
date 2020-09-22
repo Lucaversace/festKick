@@ -9,10 +9,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { EventsListComponent } from './events-list/events-list.component';
 import { DescripEventComponent } from './descrip-event/descrip-event.component';
-import { FormHomeComponent } from './form-home/form-home.component';
 import { ElemEventComponent } from './elem-event/elem-event.component';
 import { MapComponent } from './map/map.component';
-import { DescripComponent } from './descrip/descrip.component';
 import { MenuComponent } from './menu/menu.component';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 
@@ -21,11 +19,9 @@ import { LeafletModule } from '@asymmetrik/ngx-leaflet';
     AppComponent,
     EventsListComponent,
     DescripEventComponent,
-    FormHomeComponent,
     HomeComponent,
     ElemEventComponent,
     MapComponent,
-    DescripComponent,
     MenuComponent,
   ],
   imports: [

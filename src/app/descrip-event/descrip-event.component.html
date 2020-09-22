@@ -1,2 +1,12 @@
-<app-map></app-map>
-<app-descrip></app-descrip>
+<app-map [lon]="lon" [lat]="lat"></app-map>
+<div class="container-descrip">
+    <div>
+         {{ Details.displayName}} <br>
+        Artiste : {{ Details.performance[0].artist.displayName }} <br>
+        Date : {{Details.start.date}} <br>
+        Heure :  {{Details.start.time}} <br>
+        Lieu : {{Details.venue.displayName}} <br>
+        Ville : {{ Details.location.city }} <br>
+        <br> 
+    </div>
+</div>

@@ -29,9 +29,9 @@ export class SongKickService {
   }
   
 
-  getEvent(name:string){
+  getEventDetails(eventId:string){
 
-    let url = '../assets/events.json/';
+    let url = 'https://api.songkick.com/api/3.0/events/'+ eventId +'.json?apikey='+ this.API_KEY;
     let response = this.http.get(url);
 
     return response

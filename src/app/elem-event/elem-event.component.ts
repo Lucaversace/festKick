@@ -14,7 +14,7 @@ export class ElemEventComponent implements OnInit {
   constructor(private songKickServ: SongKickService) { }
 
   ngOnInit(): void {
-    console.log(this.event);
+    
   }
 
 }

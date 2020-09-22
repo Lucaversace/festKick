@@ -1,9 +1,6 @@
-<a routerLink="/Event/{{event.displayName}}" >
+<a routerLink="/Event/{{event.id}}" >
 <div>
     {{ event.displayName}} <br>
-    Artiste : {{ event.performance[0].artist.displayName }} <br>
-    Date : {{event.start.date}} <br>
-    Heure :  {{event.start.time}} <br>
     Lieu : {{event.venue.displayName}} <br>
     Ville : {{ event.location.city }} <br>
     <br>
