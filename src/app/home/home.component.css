@@ -13,63 +13,19 @@
         }
 
         body{
-        background-image: url(https://images.rove.me/w_1920,q_85/itunjmatjn0m3yp4db3a/south-carolina-carolina-country-music-fest.jpg);
+        background-image: url("../../assets/Fond1.png");
         background-size: cover;
         background-repeat: no-repeat;
         height: 50vw;
-        /* filter : brightness(70%); */ }
+        mask-image: 50%;  }
 
-        .searchbar{
-        margin-bottom: auto;
-        margin-top: auto;
-        height: 60px;
-        /* background-color: #353b48; */
-        background-color: grey;
-        opacity: 0.90;
-        border-radius: 30px;
-        padding: 10px;
+        .container{ 
+            margin-top: 15%;
+            filter : brightness(100%);
         }
-    
-        .search_input{
-        color: white;
-        border: 0;
-        outline: 0;
-        background: none;
-        width: 0;
-        caret-color:transparent;
-        line-height: 40px;
-        transition: width 0.4s linear;
-        }
-    
-        .searchbar:hover > .search_input{
-        padding: 0 10px;
-        width: 450px;
-        /* caret-color:grey; */
-        caret-color: white;
-        transition: width 0.4s linear;
-        }
-    
-        .searchbar:hover > .search_icon{
-        background: white;
-        color: grey;
-        }
-    
-        .search_icon{
-        height: 40px;
-        width: 40px;
-        float: right;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        color:white;
-        text-decoration:none;
-        }
-
-        input::placeholder{
-            color:grey;
-            background-color: white;
-            border-radius: 2vw;
-            padding: 1vw;
-
+        
+        .form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+            border: none;
+            outline: none;
+            box-shadow: none;
         }
