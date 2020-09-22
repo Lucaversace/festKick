@@ -1,6 +1,12 @@
+<a routerLink="Event/{{event.displayName}}" >
 <div>
-    Évènement : {{ event.displayName}} <br>
-    Date : <br>
-    Lieu : <br>
+    {{ event.displayName}} <br>
+    Artiste : {{ event.performance[0].artist.displayName }} <br>
+    Date : {{event.start.date}} <br>
+    Heure :  {{event.start.time}} <br>
+    Lieu : {{event.venue.displayName}} <br>
+    Ville : {{ event.location.city }} <br>
+    <br>
 </div>
+</a>
 

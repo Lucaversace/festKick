@@ -28,7 +28,6 @@ export class EventsListComponent implements OnInit {
 
           this.songKickServ.getEvents(lat,lon).subscribe((data) => {
             this.events = data;
-            console.log(data);
             this.events = data.resultsPage.results.event;
           });
         });
