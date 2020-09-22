@@ -14,7 +14,11 @@ import { ElemEventComponent } from './elem-event/elem-event.component';
 import { MapComponent } from './map/map.component';
 import { DescripComponent } from './descrip/descrip.component';
 import { MenuComponent } from './menu/menu.component';
+<<<<<<< HEAD
 import { CommonModule } from '@angular/common';
+=======
+import { ActivatedRoute } from '@angular/router';
+>>>>>>> 39fe1e192e7b854046a6e2806edbce28d995ac8c
 
 @NgModule({
   declarations: [
@@ -26,7 +30,7 @@ import { CommonModule } from '@angular/common';
     ElemEventComponent,
     MapComponent,
     DescripComponent,
-    MenuComponent
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +39,7 @@ import { CommonModule } from '@angular/common';
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
