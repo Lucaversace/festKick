@@ -8,8 +8,13 @@ import * as L from 'leaflet';
 })
 export class MapComponent implements AfterViewInit {
 
+@Input()
+descrip:any;
+
   @Input()
   lat:any;
+
+  @Input()
   lon:any;
 
   @ViewChild('map') private map;
@@ -33,7 +38,7 @@ export class MapComponent implements AfterViewInit {
   }
 
   private createMap() {
-    const Halltonie = {
+    const coord = {
       lat: this.lat,
       lng: this.lon,
     };
@@ -41,7 +46,7 @@ export class MapComponent implements AfterViewInit {
     const zoomLevel = 12;
 
     this.map = L.map('map', {
-      center: [Halltonie.lat, Halltonie.lng],
+      center: [coord.lat, coord.lng],
       zoom: zoomLevel
     });
 
@@ -52,12 +57,11 @@ export class MapComponent implements AfterViewInit {
     });
 
     mainLayer.addTo(this.map);
-    const Halldescription = `La Halle Tony-Garnier est une salle de concert située dans le quartier de Gerland à Lyon.
-    20 Place Docteurs Charles et Christophe Mérieux, 69007 Lyon`;
+    const description = this.descrip;
     const popupOptions = {
-      coords: Halltonie,
-      text: Halldescription,
-      open: true
+      coords: coord,
+      text: description,
+      open: false
     };
     this.addMarker(popupOptions);
   }

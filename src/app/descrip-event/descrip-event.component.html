@@ -1,5 +1,6 @@
-<app-map [lon]="lon" [lat]="lat"></app-map>
+<app-map [descrip]="Details.displayName" [lon]="lon" [lat]="lat"></app-map>
 <div class="container-descrip">
+
     <div>
          {{ Details.displayName}} <br>
         Artiste : {{ Details.performance[0].artist.displayName }} <br>
@@ -10,3 +11,4 @@
         <br> 
     </div>
 </div>
+ 

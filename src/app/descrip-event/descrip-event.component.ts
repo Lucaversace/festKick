@@ -23,6 +23,7 @@ export class DescripEventComponent implements OnInit {
         this.Details = eventDetails.resultsPage.results.event;
         this.lat = eventDetails.resultsPage.results.event.venue.lat;
         this.lon = eventDetails.resultsPage.results.event.venue.lng; 
+
         
         console.log(this.lat, this.lon);
         console.log(eventDetails);
@@ -33,3 +34,4 @@ export class DescripEventComponent implements OnInit {
 };
 
 }
+ 
