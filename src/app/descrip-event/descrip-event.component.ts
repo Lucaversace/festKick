@@ -18,7 +18,7 @@ export class DescripEventComponent implements OnInit {
   ngOnInit(): void {
 
     this.activatedRoute.params.subscribe((params) => {
-      this.servSongkick.getEventDetails(params.id).subscribe((eventDetails) =>{
+      this.servSongkick.getEventDetails(params.id).subscribe((eventDetails:any) =>{
 
         this.Details = eventDetails.resultsPage.results.event;
         this.lat = eventDetails.resultsPage.results.event.venue.lat;
